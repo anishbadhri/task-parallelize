@@ -198,10 +198,10 @@ ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 TaskParallelize_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-untitled_BINARY_DIR:STATIC=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug
+untitled_BINARY_DIR:STATIC=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/examples
 
 //Value Computed by CMake
-untitled_SOURCE_DIR:STATIC=/mnt/c/Users/User/CLionProjects/TaskParallelization
+untitled_SOURCE_DIR:STATIC=/mnt/c/Users/User/CLionProjects/TaskParallelization/examples
 
 
 ########################
@@ -310,7 +310,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

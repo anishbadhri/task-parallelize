@@ -57,38 +57,38 @@ include CMakeFiles/Runnable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Runnable.dir/flags.make
 
-CMakeFiles/Runnable.dir/main.cpp.o: CMakeFiles/Runnable.dir/flags.make
-CMakeFiles/Runnable.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Runnable.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Runnable.dir/main.cpp.o -c /mnt/c/Users/User/CLionProjects/TaskParallelization/main.cpp
+CMakeFiles/Runnable.dir/examples/main.cpp.o: CMakeFiles/Runnable.dir/flags.make
+CMakeFiles/Runnable.dir/examples/main.cpp.o: ../examples/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Runnable.dir/examples/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Runnable.dir/examples/main.cpp.o -c /mnt/c/Users/User/CLionProjects/TaskParallelization/examples/main.cpp
 
-CMakeFiles/Runnable.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Runnable.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/CLionProjects/TaskParallelization/main.cpp > CMakeFiles/Runnable.dir/main.cpp.i
+CMakeFiles/Runnable.dir/examples/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Runnable.dir/examples/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/CLionProjects/TaskParallelization/examples/main.cpp > CMakeFiles/Runnable.dir/examples/main.cpp.i
 
-CMakeFiles/Runnable.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Runnable.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/CLionProjects/TaskParallelization/main.cpp -o CMakeFiles/Runnable.dir/main.cpp.s
+CMakeFiles/Runnable.dir/examples/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Runnable.dir/examples/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/CLionProjects/TaskParallelization/examples/main.cpp -o CMakeFiles/Runnable.dir/examples/main.cpp.s
 
-CMakeFiles/Runnable.dir/main.cpp.o.requires:
+CMakeFiles/Runnable.dir/examples/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Runnable.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Runnable.dir/examples/main.cpp.o.requires
 
-CMakeFiles/Runnable.dir/main.cpp.o.provides: CMakeFiles/Runnable.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Runnable.dir/build.make CMakeFiles/Runnable.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Runnable.dir/main.cpp.o.provides
+CMakeFiles/Runnable.dir/examples/main.cpp.o.provides: CMakeFiles/Runnable.dir/examples/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Runnable.dir/build.make CMakeFiles/Runnable.dir/examples/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Runnable.dir/examples/main.cpp.o.provides
 
-CMakeFiles/Runnable.dir/main.cpp.o.provides.build: CMakeFiles/Runnable.dir/main.cpp.o
+CMakeFiles/Runnable.dir/examples/main.cpp.o.provides.build: CMakeFiles/Runnable.dir/examples/main.cpp.o
 
 
 # Object files for target Runnable
 Runnable_OBJECTS = \
-"CMakeFiles/Runnable.dir/main.cpp.o"
+"CMakeFiles/Runnable.dir/examples/main.cpp.o"
 
 # External object files for target Runnable
 Runnable_EXTERNAL_OBJECTS =
 
-Runnable: CMakeFiles/Runnable.dir/main.cpp.o
+Runnable: CMakeFiles/Runnable.dir/examples/main.cpp.o
 Runnable: CMakeFiles/Runnable.dir/build.make
 Runnable: CMakeFiles/Runnable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Runnable"
@@ -99,7 +99,7 @@ CMakeFiles/Runnable.dir/build: Runnable
 
 .PHONY : CMakeFiles/Runnable.dir/build
 
-CMakeFiles/Runnable.dir/requires: CMakeFiles/Runnable.dir/main.cpp.o.requires
+CMakeFiles/Runnable.dir/requires: CMakeFiles/Runnable.dir/examples/main.cpp.o.requires
 
 .PHONY : CMakeFiles/Runnable.dir/requires
 

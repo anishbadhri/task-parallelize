@@ -97,39 +97,57 @@ clean: CMakeFiles/TaskParallelize.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Runnable.dir
+# Directory level rules for directory examples
+
+# Convenience name for "all" pass in the directory.
+examples/all: examples/CMakeFiles/Runnable.dir/all
+
+.PHONY : examples/all
+
+# Convenience name for "clean" pass in the directory.
+examples/clean: examples/CMakeFiles/Runnable.dir/clean
+
+.PHONY : examples/clean
+
+# Convenience name for "preinstall" pass in the directory.
+examples/preinstall:
+
+.PHONY : examples/preinstall
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/Runnable.dir
 
 # All Build rule for target.
-CMakeFiles/Runnable.dir/all:
-	$(MAKE) -f CMakeFiles/Runnable.dir/build.make CMakeFiles/Runnable.dir/depend
-	$(MAKE) -f CMakeFiles/Runnable.dir/build.make CMakeFiles/Runnable.dir/build
+examples/CMakeFiles/Runnable.dir/all:
+	$(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/depend
+	$(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Runnable"
-.PHONY : CMakeFiles/Runnable.dir/all
+.PHONY : examples/CMakeFiles/Runnable.dir/all
 
 # Include target in all.
-all: CMakeFiles/Runnable.dir/all
+all: examples/CMakeFiles/Runnable.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Runnable.dir/rule: cmake_check_build_system
+examples/CMakeFiles/Runnable.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Runnable.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/Runnable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Runnable.dir/rule
+.PHONY : examples/CMakeFiles/Runnable.dir/rule
 
 # Convenience name for target.
-Runnable: CMakeFiles/Runnable.dir/rule
+Runnable: examples/CMakeFiles/Runnable.dir/rule
 
 .PHONY : Runnable
 
 # clean rule for target.
-CMakeFiles/Runnable.dir/clean:
-	$(MAKE) -f CMakeFiles/Runnable.dir/build.make CMakeFiles/Runnable.dir/clean
-.PHONY : CMakeFiles/Runnable.dir/clean
+examples/CMakeFiles/Runnable.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/clean
+.PHONY : examples/CMakeFiles/Runnable.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Runnable.dir/clean
+clean: examples/CMakeFiles/Runnable.dir/clean
 
 .PHONY : clean
 

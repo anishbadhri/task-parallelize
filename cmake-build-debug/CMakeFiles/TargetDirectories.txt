@@ -1,4 +1,6 @@
 /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles/TaskParallelize.dir
 /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles/Runnable.dir
+/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/examples/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/examples/CMakeFiles/Runnable.dir
+/mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/examples/CMakeFiles/edit_cache.dir

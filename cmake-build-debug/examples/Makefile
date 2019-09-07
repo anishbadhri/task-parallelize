@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/examples/CMakeFiles/progress.marks
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named TaskParallelize
+# Convenience name for target.
+examples/CMakeFiles/Runnable.dir/rule:
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/Runnable.dir/rule
+.PHONY : examples/CMakeFiles/Runnable.dir/rule
 
-# Build rule for target.
-TaskParallelize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TaskParallelize
-.PHONY : TaskParallelize
+# Convenience name for target.
+Runnable: examples/CMakeFiles/Runnable.dir/rule
 
-# fast build rule for target.
-TaskParallelize/fast:
-	$(MAKE) -f CMakeFiles/TaskParallelize.dir/build.make CMakeFiles/TaskParallelize.dir/build
-.PHONY : TaskParallelize/fast
-
-#=============================================================================
-# Target rules for targets named Runnable
-
-# Build rule for target.
-Runnable: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Runnable
 .PHONY : Runnable
 
 # fast build rule for target.
 Runnable/fast:
-	$(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/build
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/build
 .PHONY : Runnable/fast
 
-library.o: library.cpp.o
+main.o: main.cpp.o
 
-.PHONY : library.o
+.PHONY : main.o
 
 # target to build an object file
-library.cpp.o:
-	$(MAKE) -f CMakeFiles/TaskParallelize.dir/build.make CMakeFiles/TaskParallelize.dir/library.cpp.o
-.PHONY : library.cpp.o
+main.cpp.o:
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-library.i: library.cpp.i
+main.i: main.cpp.i
 
-.PHONY : library.i
+.PHONY : main.i
 
 # target to preprocess a source file
-library.cpp.i:
-	$(MAKE) -f CMakeFiles/TaskParallelize.dir/build.make CMakeFiles/TaskParallelize.dir/library.cpp.i
-.PHONY : library.cpp.i
+main.cpp.i:
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-library.s: library.cpp.s
+main.s: main.cpp.s
 
-.PHONY : library.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-library.cpp.s:
-	$(MAKE) -f CMakeFiles/TaskParallelize.dir/build.make CMakeFiles/TaskParallelize.dir/library.cpp.s
-.PHONY : library.cpp.s
+main.cpp.s:
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(MAKE) -f examples/CMakeFiles/Runnable.dir/build.make examples/CMakeFiles/Runnable.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -170,12 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... TaskParallelize"
-	@echo "... edit_cache"
 	@echo "... Runnable"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
+	@echo "... edit_cache"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/User/CLionProjects/TaskParallelization/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
