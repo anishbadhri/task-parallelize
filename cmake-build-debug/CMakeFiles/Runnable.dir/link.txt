@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Runnable.dir/examples/main.cpp.o  -o Runnable 

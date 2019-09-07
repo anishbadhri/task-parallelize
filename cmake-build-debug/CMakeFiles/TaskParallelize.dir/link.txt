@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTaskParallelize.a  CMakeFiles/TaskParallelize.dir/library.cpp.o
-/usr/bin/ranlib libTaskParallelize.a

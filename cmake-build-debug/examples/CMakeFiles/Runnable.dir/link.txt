@@ -1,1 +1,0 @@
-/usr/bin/c++   -pthread -g   CMakeFiles/Runnable.dir/main.cpp.o  -o Runnable 
